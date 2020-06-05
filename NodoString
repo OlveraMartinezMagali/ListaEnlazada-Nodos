@@ -1,0 +1,27 @@
+public class NodoString
+{
+ public NodoString Siguiente;
+ private String Data;
+ 
+ public NodoString(NodoString Sig, String Data)
+ {
+  this.Siguiente=Sig;
+  this. Data = Data;
+ }
+ 
+ public String obtenerData()
+ {
+  return Data;
+ }
+ 
+ public void colocarData(String Data)
+ {
+  this.Data= Data;
+ }
+ 
+ public String toString()
+ {
+  return "Data: "+Data;
+ }
+ 
+}
